@@ -10,7 +10,7 @@ print "\n";
 #----------------------------------------------------------------------------------------
 while (1) {
    $prod_step= prompt(" Starting Production Step");
-   $stop_prod_step= prompt(" Starting Production Step");
+   $stop_prod_step= prompt(" Ending Production Step");
    $iprint = prompt(" Value of iprint");
 
    $pos_dir = prompt(" Relative Pathname of the Position File Directory");
