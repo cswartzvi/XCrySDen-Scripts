@@ -92,6 +92,7 @@ while (1) {
    }
    else {
       print("\n Mark defects:       NO");
+      $defect_num = 0;
    }
    print("\n\n");
   
@@ -202,7 +203,7 @@ if ($defect_num ==  0){
 
 #-------------------------------------------------------------------------------
 # One OH xcrysden Script
-if ($defect_num ==  1){
+elsif ($defect_num ==  1){
 
    foreach $i ( 0 .. $#tcl_lines ) {
       if ($tcl_lines[$i] =~ /OSTAR1/){
@@ -224,7 +225,7 @@ if ($defect_num ==  1){
 
 #-------------------------------------------------------------------------------
 #Two OH xcrysden Script
-if ($defect_num  ==  2){
+elsif ($defect_num  ==  2){
 
    foreach $i ( 0 .. $#tcl_lines ) {
       if ($tcl_lines[$i] =~ /OSTAR1/){
